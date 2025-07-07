@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>1320 Drag - المتجر</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: url('https://www.raed.net/img?id=1376215') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      user-select: none;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      backdrop-filter: blur(6px);
+      background-color: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    .navbar {
+      text-align: center;
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .navbar a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ff6600;
+    }
+
+    .shop-wrapper {
+      max-width: 1200px;
+      margin: 140px auto 60px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .placeholder {
+      font-size: 22px;
+      color: #ccc;
+      margin-top: 100px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      color: #ccc;
+      font-size: 14px;
+      border-top: 1px solid #444;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">🏠 الرئيسية</a>
+  <a href="cars.html">🚗 السيارات</a>
+  <a href="mods.html">🧩 المودات</a>
+  <a href="shop.html">🛒 المتجر</a>
+  <a href="tutorials.html">📚 شروحات</a>
+</div>
+
+<div class="shop-wrapper">
+  <div class="placeholder">
+    لا توجد منتجات حالياً.<br>سيتم إضافة محتوى المتجر قريبًا بعد تفعيل الدفع بـ PayPal.
+  </div>
+</div>
+
+<footer>
+  جميع الحقوق محفوظة © 2025 - 1320 Drag
+</footer>
+
+</body>
+</html>

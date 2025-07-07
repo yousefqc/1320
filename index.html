@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>1320 Drag - الصفحة الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      color: #fff;
+      background: url('https://www.raed.net/img?id=1376215') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      backdrop-filter: blur(6px);
+      background-color: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    /* منع تحديد ونسخ النصوص عدا الحقول */
+    body, 
+    body * {
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+    }
+
+    input, textarea {
+      user-select: text !important;
+      -webkit-user-select: text !important;
+      -moz-user-select: text !important;
+      -ms-user-select: text !important;
+    }
+
+    .navbar {
+      text-align: center;
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .navbar a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.3s;
+      user-select: text !important;
+    }
+
+    .navbar a:hover {
+      color: #ff6600;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 100%;
+      filter: drop-shadow(0 0 5px #ff6600);
+      user-select: none;
+      margin-bottom: 10px;
+    }
+
+    .slider {
+      width: 100%;
+      background-color: rgba(0,0,0,0.6);
+      overflow: hidden;
+      border-radius: 20px;
+      border: 2px solid #ff5500;
+    }
+
+    .slider-track {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      animation: slideLeft 20s linear infinite;
+    }
+
+    .slider-track img {
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 85, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .slider-track img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      box-shadow: 0 0 15px rgba(255, 85, 0, 0.6);
+      border-radius: 15px;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .banner img {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+    }
+
+    /* تصميم input احترافي */
+    .input-container {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      border: 2px solid #ff5500;
+      border-radius: 15px;
+      font-size: 18px;
+      font-family: 'Cairo', sans-serif;
+      color: #333;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      background-color: #fff;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff6600;
+      box-shadow: 0 0 10px #ff6600;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      color: #ccc;
+      font-size: 14px;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="cars.html">🚗 السيارات</a>
+  <a href="mods.html">🧩 المودات</a>
+  <a href="shop.html">🛒 المتجر</a>
+  <a href="tutorials.html">📚 شروحات</a>
+</div>
+
+<div class="content-wrapper">
+  <img class="logo" src="https://www.raed.net/img?id=1376219" alt="شعار 1320 Drag" />
+  
+  <div class="slider">
+    <div class="slider-track">
+      <img src="https://www.raed.net/img?id=1376225" alt="صورة 1" />
+      <img src="https://www.raed.net/img?id=1376226" alt="صورة 2" />
+      <img src="https://www.raed.net/img?id=1376227" alt="صورة 3" />
+      <img src="https://www.raed.net/img?id=1376229" alt="صورة 4" />
+      <img src="https://www.raed.net/img?id=1376232" alt="مكرر 1" />
+      <img src="https://www.raed.net/img?id=1376236" alt="مكرر 2" />
+    </div>
+  </div>
+
+  <div class="banner">
+    <img src="https://www.raed.net/img?id=1376221" alt="بانر كبير 1320 Drag" />
+  </div>
+
+  <div class="input-container">
+    <input type="text" placeholder="" />
+  </div>
+</div>
+
+<footer>
+  جميع الحقوق محفوظة © 2025 - 1320 Drag
+</footer>
+
+</body>
+</html>
